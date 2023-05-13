@@ -1,69 +1,73 @@
-.news-list{
-    list-style: none outside;
-    margin: 0;
-    padding: 0;
-  }
-  .news-list .item a{
-    display: flex;
-    flex-wrap: wrap;
-    flex-wrap: nowrap;
-    text-decoration: none;
-    color: #333;
-    border-bottom: 1px solid #CCC;
-    padding: 20px 20px;
-  }
-  .news-list .item:first-child a{
-    border-top: 1px solid #CCC;
-  }
-  .news-list .item .date{
-    margin: 0;
-    min-width: 140px;
-    font-size: 16px;
-    color: #999;
-    padding: 0 20px 0 0;
-  }
-  .news-list .item .category{
-    margin: 0;
-    min-width: 140px;
-    padding: 0 20px 0 0;
-  }
-  .news-list .item .category span{
-    background: #999;
-    color: #FFF;
-    text-align: center;
-    display: inline-block;
-    padding: 5px 20px;
-    font-size: 12px;
-    line-height: 1;
-  }
-  .news-list .item .title{
-    margin: 0;
-    width: 100%;
-  }
-  .news-list .item a:hover .title{
-    color: #00F;
-  }
-  
-  @media screen and (max-width: 767px){
-  .news-list .item a{
-    flex-wrap: wrap;
-  }
-  .news-list .item .date{
-    min-width: 100px;
-  }
-  .news-list .item .title{
-    margin-top: 10px;
-  }
-  }
-  
-  /* 装飾 */
-   
-  *{
-    box-sizing: border-box;
-  }
-  a{
-    text-decoration: none;
-  }
-  body{
-    margin: 20px;
-  }
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Grid styles */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col {
+  flex: 0 0 calc(50% - 30px);
+  max-width: calc(50% - 30px);
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+/* Card styles */
+.card {
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-header h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-header p {
+  font-size: 14px;
+  color: #999;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body p {
+  font-size: 16px;
+}
