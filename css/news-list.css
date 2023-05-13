@@ -67,3 +67,11 @@ a{
 body{
   margin: 20px;
 }
+
+ul.news-list {
+  line-height: 1.5;
+}
+
+li.item {
+  margin-bottom: 1em;
+}
